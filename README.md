@@ -16,16 +16,16 @@ MQTT topic logger with playback option. The local MQTT broker stream can be save
    - MQTT_PLAYBACK_DB: DB file name to be played back (Ex. 2022-10-02_MQTT-LOG.db)
    - MQTT_PLAYBACK_SPEED: Playback speed multiplayer (Default speed: 1 )
 
-4. Run docker compose to start logging or playback 
-
+4. Run docker compose to start logging or playback
 
 Build from docker
 
 ```bash
+# Edit docker-compose for settings changes
 
-docker-compose -f .\docker-compose.logger.yml up  
+docker-compose -f .\docker-compose.logger.yml up
 
-# Rebuild container 
+# Rebuild container
 docker-compose -f .\docker-compose.logger.yml up --build
 
 ```
